@@ -1,6 +1,7 @@
-Hello world, 
-curl http://www.viedemerde.fr | grep -w "amour" |wc -l 
+#!/bin/bash
 
-Une commande pour compter le nombre de mot "amour" sur la page http://www.viedemerde.fr
+echo "Entrez un  mot: " #On affiche à l'écran le texte indiqué qui invite l'utilisateur à entrer un mot
+read word #On récupère le mot entré par l'utilisateur
+curl http://www.viedemerde.fr | grep -w $word |wc -l #Une commande pour compter le nombre de mot "amour" sur la page http://www.viedemerde.fr, ici on compte le nombre de fois où apparait 
 
-Pour compter le nombre de post dans la catégorie. Il faudrait limiter la recherche sur les balises <a></a> de classe "liencat".
+
