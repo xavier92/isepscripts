@@ -6,7 +6,7 @@
 echo "Entrez le nom d'une catégorie: " #On affiche à l'écran le texte indiqué qui invite l'utilisateur à entrer le nom d'une catégorie
 read word #On récupère la catégorie entrée par l'utilisateur
  while true;  
-  case $word in # test les entrées
+  case $word in # teste les entrées
   "argent" | "amour" | "travail" | "animaux")  # contrôle les catégories
 cd www.viedemerde.fr/$word # On se place dans le répertoire www.viedemerde.fr et ensuite dans le répertoire correspondant à la catégorie choisie
 echo 'Voici les résultats de la catégorie '$word ;
